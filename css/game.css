@@ -4,6 +4,7 @@
 .background td { padding: 0;          }
 .lava          { background: rgb(255, 90, 30); }
 .wall          { background: white;   }
+.spike {background: black;}
 
 .actor  { position: absolute;  }
 .coin   { background: rgb(241, 229, 89); }

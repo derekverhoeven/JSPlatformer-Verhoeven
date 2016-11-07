@@ -369,7 +369,9 @@ Level.prototype.playerTouched = function(type, actor) {
   // Player loses
   if (type == "lava" && this.status == null) {
     this.status = "lost";
+    alert("YOU LOSE!")
     this.finishDelay = 1;
+
   } else if (type == "coin") {
     this.actors = this.actors.filter(function(other) {
       return other != actor;
@@ -380,6 +382,7 @@ Level.prototype.playerTouched = function(type, actor) {
          })) {
       this.status = "won";
       this.finishDelay = 1;
+      alert('level won!');
     }
   }
 };
